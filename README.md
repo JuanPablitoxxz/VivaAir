@@ -1,25 +1,56 @@
-# VivaAir Next.js - Plataforma de Vuelos Nacionales
+# VivaAir - Plataforma de Vuelos Nacionales
 
-Una aplicación web moderna construida con Next.js 14, TypeScript y Tailwind CSS para la búsqueda y reserva de vuelos nacionales en Colombia.
+Una plataforma web moderna para la búsqueda y reserva de vuelos nacionales en Colombia, desarrollada con tecnologías de vanguardia.
 
-## 🚀 Características
+## 🚀 Proyectos Incluidos
 
-- **Framework**: Next.js 14 con App Router
-- **Lenguaje**: TypeScript
-- **Estilos**: Tailwind CSS con colores personalizados
-- **Animaciones**: Framer Motion
-- **Formularios**: React Hook Form con validación Zod
-- **Iconos**: Heroicons
-- **Responsive**: Diseño adaptable a todos los dispositivos
+### 1. **Versión HTML/CSS/JS** (Original)
+- Página web estática con diseño moderno
+- Colores azul claro y blanco
+- Enfoque en vuelos nacionales
+- Responsive design
 
-## 🎨 Diseño
+### 2. **Versión Next.js** (Moderno) ⭐
+- Framework React con Next.js 14
+- TypeScript para mayor robustez
+- Tailwind CSS para estilos
+- Componentes reutilizables
+- Optimización SEO
+- Animaciones con Framer Motion
 
-- **Colores principales**: Azul claro (#87CEEB) y blanco
-- **Enfoque**: Solo vuelos nacionales en Colombia
-- **UI/UX**: Moderna e intuitiva inspirada en plataformas líderes
+## 📁 Estructura del Repositorio
 
-## 🛠️ Tecnologías
+```
+VivaAir/
+├── vivaair-nextjs/          # Aplicación Next.js moderna
+│   ├── src/
+│   │   ├── app/            # App Router de Next.js
+│   │   └── components/     # Componentes React
+│   ├── public/             # Archivos estáticos
+│   └── package.json        # Dependencias
+├── index.html              # Versión HTML original
+├── styles.css              # Estilos CSS originales
+├── script.js               # JavaScript original
+└── README.md               # Este archivo
+```
 
+## 🎯 Características Principales
+
+### ✈️ **Funcionalidades de Vuelos**
+- Búsqueda de vuelos nacionales
+- Selección de fechas y pasajeros
+- Destinos populares colombianos
+- Precios en tiempo real
+
+### 🎨 **Diseño y UX**
+- Colores: Azul claro (#87CEEB) y blanco
+- Diseño responsive
+- Animaciones suaves
+- Interfaz intuitiva
+
+### 🛠️ **Tecnologías**
+
+#### Versión Next.js:
 - **Frontend**: Next.js 14, React 19, TypeScript
 - **Styling**: Tailwind CSS
 - **Animations**: Framer Motion
@@ -27,86 +58,42 @@ Una aplicación web moderna construida con Next.js 14, TypeScript y Tailwind CSS
 - **Icons**: Heroicons
 - **Images**: Next.js Image Optimization
 
-## 📦 Instalación
+#### Versión HTML:
+- **Frontend**: HTML5, CSS3, JavaScript
+- **Icons**: Font Awesome
+- **Responsive**: CSS Grid y Flexbox
+
+## 🚀 Cómo Usar
+
+### Versión Next.js (Recomendada)
 
 ```bash
-# Clonar el repositorio
-git clone https://github.com/JuanPablitoxxz/VivaAir.git
-cd VivaAir/vivaair-nextjs
+# Navegar al directorio
+cd vivaair-nextjs
 
 # Instalar dependencias
 npm install
 
-# Ejecutar en modo desarrollo
-npm run dev
-```
-
-## 🚀 Scripts Disponibles
-
-```bash
-# Desarrollo
+# Ejecutar en desarrollo
 npm run dev
 
-# Construcción para producción
+# Construir para producción
 npm run build
 
 # Ejecutar en producción
 npm run start
-
-# Linting
-npm run lint
 ```
 
-## 📁 Estructura del Proyecto
+### Versión HTML
 
+```bash
+# Simplemente abrir index.html en el navegador
+open index.html
 ```
-vivaair-nextjs/
-├── src/
-│   ├── app/
-│   │   ├── globals.css
-│   │   ├── layout.tsx
-│   │   └── page.tsx
-│   └── components/
-│       ├── Header.tsx
-│       ├── SearchForm.tsx
-│       ├── DestinationCard.tsx
-│       ├── SpecialOffers.tsx
-│       └── AdditionalServices.tsx
-├── public/
-├── tailwind.config.ts
-├── next.config.js
-└── package.json
-```
-
-## 🎯 Funcionalidades Implementadas
-
-### ✅ Formulario de Búsqueda
-- Búsqueda por origen y destino
-- Selección de fechas
-- Configuración de pasajeros
-- Validación de formularios
-- Intercambio de origen/destino
-
-### ✅ Destinos Populares
-- Tarjetas interactivas
-- Precios en tiempo real
-- Efectos hover
-- Animaciones suaves
-
-### ✅ Ofertas Especiales
-- Promociones de hoteles
-- Descuentos en vuelos
-- Sección especial con Shakira
-- Diseño atractivo
-
-### ✅ Servicios Adicionales
-- Asesoría personalizada
-- Asistente de IA (SOFIA)
-- Diseño responsive
 
 ## 🌐 Despliegue
 
-### Vercel (Recomendado)
+### Vercel (Recomendado para Next.js)
 ```bash
 # Instalar Vercel CLI
 npm i -g vercel
@@ -115,35 +102,9 @@ npm i -g vercel
 vercel
 ```
 
-### Netlify
-```bash
-# Construir el proyecto
-npm run build
-
-# Subir la carpeta 'out' a Netlify
-```
-
-## 🔧 Configuración
-
-### Variables de Entorno
-Crea un archivo `.env.local`:
-
-```env
-NEXT_PUBLIC_API_URL=https://api.vivaair.com
-NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=pk_test_...
-```
-
-### Personalización de Colores
-Edita `tailwind.config.ts` para cambiar la paleta de colores:
-
-```typescript
-colors: {
-  'vivaair-blue': {
-    500: '#87CEEB', // Color principal
-    600: '#4682B4', // Color secundario
-  }
-}
-```
+### GitHub Pages (Para versión HTML)
+1. Subir archivos a la rama `gh-pages`
+2. Activar GitHub Pages en la configuración del repositorio
 
 ## 📱 Responsive Design
 
@@ -151,27 +112,30 @@ colors: {
 - **Tablet**: 768px - 1023px
 - **Desktop**: 1024px+
 
-## 🎨 Componentes Principales
+## 🎨 Paleta de Colores
 
-### Header
-- Logo y navegación
-- Información de contacto
-- Menú responsive
+- **Azul claro principal**: #87CEEB
+- **Azul oscuro**: #4682B4
+- **Blanco**: #FFFFFF
+- **Gris claro**: #F8F9FA
+- **Rojo de botones**: #FF4757
 
-### SearchForm
-- Formulario de búsqueda avanzado
-- Validación en tiempo real
-- Estados de carga
+## 🏗️ Arquitectura
 
-### DestinationCard
-- Tarjetas de destinos
-- Animaciones hover
-- Información de precios
-
-### SpecialOffers
-- Ofertas promocionales
-- Diseño atractivo
-- Call-to-actions
+### Next.js (App Router)
+```
+src/
+├── app/
+│   ├── layout.tsx          # Layout principal
+│   ├── page.tsx            # Página de inicio
+│   └── globals.css         # Estilos globales
+└── components/
+    ├── Header.tsx          # Componente header
+    ├── SearchForm.tsx      # Formulario de búsqueda
+    ├── DestinationCard.tsx # Tarjetas de destinos
+    ├── SpecialOffers.tsx   # Ofertas especiales
+    └── AdditionalServices.tsx # Servicios adicionales
+```
 
 ## 🚀 Próximas Funcionalidades
 
@@ -181,8 +145,9 @@ colors: {
 - [ ] Pago con Stripe
 - [ ] Notificaciones push
 - [ ] PWA (Progressive Web App)
+- [ ] App móvil con React Native
 
-## 📞 Soporte
+## 📞 Contacto
 
 - **Email**: soporte@vivaair.com
 - **Teléfono**: 01 800 518 9327
@@ -191,6 +156,21 @@ colors: {
 ## 📄 Licencia
 
 © 2025 VivaAir. Todos los derechos reservados.
+
+---
+
+## 🎯 ¿Cuál Versión Usar?
+
+### **Usa la versión Next.js si:**
+- Quieres una aplicación moderna y escalable
+- Necesitas SEO optimizado
+- Planeas agregar funcionalidades avanzadas
+- Quieres mejor rendimiento
+
+### **Usa la versión HTML si:**
+- Necesitas algo simple y rápido
+- No tienes experiencia con React/Next.js
+- Quieres un sitio estático básico
 
 ---
 
