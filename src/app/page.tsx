@@ -1,65 +1,128 @@
-import Image from "next/image";
+import Header from '@/components/Header'
+import SearchForm from '@/components/SearchForm'
+import DestinationCard from '@/components/DestinationCard'
+import SpecialOffers from '@/components/SpecialOffers'
+import AdditionalServices from '@/components/AdditionalServices'
+
+const destinations = [
+  {
+    destination: 'Vuelos a Cartagena de Indias',
+    city: 'Cartagena',
+    price: '$ 247.516',
+    dates: '8 febrero 2026 - 19 febrero 2026',
+    image: 'https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=400&h=300&fit=crop',
+    alt: 'Cartagena de Indias'
+  },
+  {
+    destination: 'Vuelos a Medellín',
+    city: 'Medellín',
+    price: '$ 143.815',
+    dates: '1 febrero 2026 - 5 febrero 2026',
+    image: 'https://images.unsplash.com/photo-1582407947304-fd86f028f716?w=400&h=300&fit=crop',
+    alt: 'Medellín'
+  },
+  {
+    destination: 'Vuelos a Santa Marta',
+    city: 'Santa Marta',
+    price: '$ 262.454',
+    dates: '3 febrero 2026 - 12 febrero 2026',
+    image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=300&fit=crop',
+    alt: 'Santa Marta'
+  },
+  {
+    destination: 'Vuelos a Cali',
+    city: 'Cali',
+    price: '$ 138.920',
+    dates: '11 noviembre 2025 - 15 noviembre 2025',
+    image: 'https://images.unsplash.com/photo-1582407947304-fd86f028f716?w=400&h=300&fit=crop',
+    alt: 'Cali'
+  }
+]
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <main className="min-h-screen">
+      <Header />
+      <SearchForm />
+      
+      {/* Popular Destinations */}
+      <section className="py-16 bg-white">
+        <div className="container">
+          <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
+            Encuentra vuelos baratos a los destinos más populares
+          </h2>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {destinations.map((dest, index) => (
+              <DestinationCard
+                key={index}
+                destination={dest.destination}
+                city={dest.city}
+                price={dest.price}
+                dates={dest.dates}
+                image={dest.image}
+                alt={dest.alt}
+              />
+            ))}
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+      </section>
+
+      <SpecialOffers />
+      <AdditionalServices />
+      
+      {/* Footer */}
+      <footer className="bg-gray-900 text-white py-12">
+        <div className="container">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div>
+              <div className="flex items-center space-x-3 mb-4">
+                <div className="w-10 h-10 bg-white text-blue-600 rounded-full flex items-center justify-center font-bold text-xl">
+                  V
+                </div>
+                <span className="text-2xl font-bold">VivaAir</span>
+              </div>
+              <p className="text-gray-400">
+                Tu compañía de vuelos nacionales en Colombia
+              </p>
+            </div>
+            
+            <div>
+              <h3 className="text-lg font-semibold mb-4">Vuelos</h3>
+              <ul className="space-y-2 text-gray-400">
+                <li><a href="#" className="hover:text-white transition-colors">Medellín</a></li>
+                <li><a href="#" className="hover:text-white transition-colors">Cartagena</a></li>
+                <li><a href="#" className="hover:text-white transition-colors">Cali</a></li>
+                <li><a href="#" className="hover:text-white transition-colors">Santa Marta</a></li>
+              </ul>
+            </div>
+            
+            <div>
+              <h3 className="text-lg font-semibold mb-4">Servicios</h3>
+              <ul className="space-y-2 text-gray-400">
+                <li><a href="#" className="hover:text-white transition-colors">Asistencia 24/7</a></li>
+                <li><a href="#" className="hover:text-white transition-colors">Check-in online</a></li>
+                <li><a href="#" className="hover:text-white transition-colors">Equipaje</a></li>
+                <li><a href="#" className="hover:text-white transition-colors">Cambios y cancelaciones</a></li>
+              </ul>
+            </div>
+            
+            <div>
+              <h3 className="text-lg font-semibold mb-4">Contacto</h3>
+              <ul className="space-y-2 text-gray-400">
+                <li>Ventas: 01 800 518 9327</li>
+                <li>WhatsApp: +57 300 123 4567</li>
+                <li>Email: info@vivaair.com</li>
+                <li>Bogotá, Colombia</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+            <p>&copy; 2025 VivaAir. Todos los derechos reservados.</p>
+          </div>
         </div>
-      </main>
-    </div>
-  );
+      </footer>
+    </main>
+  )
 }
