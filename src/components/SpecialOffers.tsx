@@ -19,22 +19,22 @@ export default function SpecialOffers() {
   const offers: OfferCardProps[] = [
     {
       type: 'hotels',
-      title: 'Semana de HOTELES',
-      discount: 'HASTA 66% DTO',
+      title: 'VUELOS AVANCA',
+      discount: 'HASTA 50% DTO',
       description: 'Paga a 3 CUOTAS SIN INTERESES',
-      buttonText: 'EXCLUSIVO APP, TIENDAS Y CALL CENTER',
+      buttonText: 'VER OFERTAS AVANCA',
       image: 'https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=400&h=300&fit=crop',
-      alt: 'Hotel de lujo',
-      icon: '🛏️'
+      alt: 'Avión Avianca',
+      icon: '✈️'
     },
     {
       type: 'discount',
-      title: 'DESCUENTO adicional',
+      title: 'LATAM COLOMBIA',
       discount: 'Hasta $200.000 DTO',
       description: 'Nequi, Banco de Bogotá, Banco Popular',
-      buttonText: 'Ver ofertas',
+      buttonText: 'VER OFERTAS LATAM',
       image: 'https://images.unsplash.com/photo-1506905925346-14bda5d4a4b0?w=400&h=300&fit=crop',
-      alt: 'Playa tropical'
+      alt: 'Avión LATAM'
     },
     {
       type: 'flights',
@@ -50,7 +50,7 @@ export default function SpecialOffers() {
       type: 'vivaair',
       title: 'VivaAir',
       subtitle: 'ft. SHAKIRA',
-      discount: '',
+      discount: 'VUELOS ECONÓMICOS',
       buttonText: 'Busca ya tu viaje',
       image: 'https://images.unsplash.com/photo-1494790108755-2616b612b786?w=400&h=300&fit=crop',
       alt: 'Shakira'

@@ -8,6 +8,7 @@ const destinations = [
   {
     destination: 'Vuelos a Cartagena de Indias',
     city: 'Cartagena',
+    airline: 'Avianca',
     price: '$ 247.516',
     dates: '8 febrero 2026 - 19 febrero 2026',
     image: 'https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=400&h=300&fit=crop',
@@ -16,6 +17,7 @@ const destinations = [
   {
     destination: 'Vuelos a Medellín',
     city: 'Medellín',
+    airline: 'LATAM',
     price: '$ 143.815',
     dates: '1 febrero 2026 - 5 febrero 2026',
     image: 'https://images.unsplash.com/photo-1582407947304-fd86f028f716?w=400&h=300&fit=crop',
@@ -24,6 +26,7 @@ const destinations = [
   {
     destination: 'Vuelos a Santa Marta',
     city: 'Santa Marta',
+    airline: 'VivaAir',
     price: '$ 262.454',
     dates: '3 febrero 2026 - 12 febrero 2026',
     image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=300&fit=crop',
@@ -32,6 +35,7 @@ const destinations = [
   {
     destination: 'Vuelos a Cali',
     city: 'Cali',
+    airline: 'Avianca',
     price: '$ 138.920',
     dates: '11 noviembre 2025 - 15 noviembre 2025',
     image: 'https://images.unsplash.com/photo-1582407947304-fd86f028f716?w=400&h=300&fit=crop',
@@ -58,6 +62,7 @@ export default function Home() {
                 key={index}
                 destination={dest.destination}
                 city={dest.city}
+                airline={dest.airline}
                 price={dest.price}
                 dates={dest.dates}
                 image={dest.image}
@@ -88,12 +93,12 @@ export default function Home() {
             </div>
             
             <div>
-              <h3 className="text-lg font-semibold mb-4">Vuelos</h3>
+              <h3 className="text-lg font-semibold mb-4">Aerolíneas</h3>
               <ul className="space-y-2 text-gray-400">
-                <li><a href="#" className="hover:text-white transition-colors">Medellín</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Cartagena</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Cali</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Santa Marta</a></li>
+                <li><a href="#" className="hover:text-white transition-colors">Avianca</a></li>
+                <li><a href="#" className="hover:text-white transition-colors">LATAM Colombia</a></li>
+                <li><a href="#" className="hover:text-white transition-colors">VivaAir</a></li>
+                <li><a href="#" className="hover:text-white transition-colors">EasyFly</a></li>
               </ul>
             </div>
             

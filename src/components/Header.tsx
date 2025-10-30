@@ -38,7 +38,7 @@ export default function Header() {
               
               <a href="#" className="flex items-center space-x-2 hover:opacity-80 transition-opacity duration-200">
                 <HomeIcon className="w-4 h-4" />
-                <span className="text-sm">Publica tu alojamiento</span>
+                <span className="text-sm">Aerolíneas</span>
               </a>
               
               <a href="#" className="flex items-center space-x-2 hover:opacity-80 transition-opacity duration-200">
@@ -83,15 +83,13 @@ export default function Header() {
           <div className="flex justify-center space-x-8 overflow-x-auto">
             {[
               { icon: '✈️', label: 'Vuelos', active: true },
-              { icon: '🛏️', label: 'Alojamientos', active: false },
-              { icon: '🎒', label: 'Paquetes', active: false },
               { icon: '🏷️', label: 'Ofertas', active: false },
-              { icon: '🧭', label: 'Circuitos', active: false },
-              { icon: '🏠', label: 'Alquileres', active: false },
               { icon: '🎫', label: 'Actividades', active: false },
               { icon: '🚗', label: 'Carros', active: false },
-              { icon: '➕', label: 'Asistencias', active: false },
               { icon: '🚌', label: 'Traslados', active: false },
+              { icon: '📱', label: 'App', active: false },
+              { icon: '💳', label: 'Pagos', active: false },
+              { icon: '📞', label: 'Contacto', active: false },
             ].map((item, index) => (
               <button
                 key={index}
