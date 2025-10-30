@@ -1,7 +1,6 @@
 {
-  "buildCommand": "npm run build",
+  "buildCommand": "cd vivaair-nextjs && npm run build",
   "outputDirectory": "vivaair-nextjs/.next",
-  "installCommand": "npm install && cd vivaair-nextjs && npm install",
-  "framework": "nextjs",
-  "rootDirectory": "vivaair-nextjs"
+  "installCommand": "cd vivaair-nextjs && npm install",
+  "framework": "nextjs"
 }
