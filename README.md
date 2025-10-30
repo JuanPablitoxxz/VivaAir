@@ -56,6 +56,7 @@ VivaAir/
 - **Animations**: Framer Motion
 - **Forms**: React Hook Form + Zod
 - **Icons**: Heroicons
+- **Images**: Next.js Image Optimization
 
 #### Versión HTML:
 - **Frontend**: HTML5, CSS3, JavaScript
