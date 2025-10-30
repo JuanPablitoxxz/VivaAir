@@ -2,10 +2,5 @@
   "buildCommand": "cd vivaair-nextjs && npm run build",
   "outputDirectory": "vivaair-nextjs/.next",
   "installCommand": "cd vivaair-nextjs && npm install",
-  "framework": "nextjs",
-  "functions": {
-    "vivaair-nextjs/src/app/**/*.tsx": {
-      "runtime": "nodejs18.x"
-    }
-  }
+  "framework": "nextjs"
 }
