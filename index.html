@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VivaAir - Vuelos Nacionales</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Superior -->
+    <div class="top-header">
+        <div class="container">
+            <div class="logo">
+                <div class="logo-icon">V</div>
+                <span class="logo-text">VivaAir</span>
+            </div>
+            <div class="contact-info">
+                <button class="contact-btn">
+                    <i class="fas fa-phone"></i>
+                    Ventas 01 800 518 9327
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <a href="#" class="header-link">
+                    <i class="fas fa-home"></i>
+                    Publica tu alojamiento
+                </a>
+                <a href="#" class="header-link">
+                    <i class="fas fa-question-circle"></i>
+                    Ayuda
+                </a>
+                <a href="#" class="header-link">
+                    <i class="fas fa-suitcase"></i>
+                    Mis Viajes
+                </a>
+            </div>
+            <div class="user-section">
+                <div class="benefits">
+                    <span class="benefits-title">Beneficios Pasaporte</span>
+                    <span class="benefits-subtitle">Cupones, puntos y más.</span>
+                </div>
+                <div class="user-profile">
+                    <i class="fas fa-user-circle"></i>
+                    <span class="notification">1</span>
+                </div>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navegación Principal -->
+    <nav class="main-nav">
+        <div class="container">
+            <div class="nav-item active">
+                <i class="fas fa-plane"></i>
+                <span>Vuelos</span>
+            </div>
+            <div class="nav-item">
+                <i class="fas fa-bed"></i>
+                <span>Alojamientos</span>
+            </div>
+            <div class="nav-item">
+                <i class="fas fa-suitcase"></i>
+                <span>Paquetes</span>
+            </div>
+            <div class="nav-item">
+                <i class="fas fa-tag"></i>
+                <span>Ofertas</span>
+            </div>
+            <div class="nav-item">
+                <i class="fas fa-compass"></i>
+                <span>Circuitos</span>
+            </div>
+            <div class="nav-item">
+                <i class="fas fa-home"></i>
+                <span>Alquileres</span>
+            </div>
+            <div class="nav-item">
+                <i class="fas fa-ticket-alt"></i>
+                <span>Actividades</span>
+            </div>
+            <div class="nav-item">
+                <i class="fas fa-car"></i>
+                <span>Carros</span>
+            </div>
+            <div class="nav-item">
+                <i class="fas fa-plus-circle"></i>
+                <span>Asistencias</span>
+            </div>
+            <div class="nav-item">
+                <i class="fas fa-bus"></i>
+                <span>Traslados</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Formulario de Búsqueda Principal -->
+    <div class="search-section">
+        <div class="container">
+            <div class="search-form">
+                <div class="form-header">
+                    <h1>Vuelos Nacionales</h1>
+                    <div class="flight-type-tabs">
+                        <button class="tab active">Ida y vuelta</button>
+                        <button class="tab">Solo ida</button>
+                        <button class="tab">Multidestino</button>
+                    </div>
+                    <div class="flight-hotel-btn">
+                        <div class="discount-badge">Hasta 30% de ahorro</div>
+                        <button class="flight-hotel">
+                            <i class="fas fa-plane"></i>
+                            <i class="fas fa-bed"></i>
+                            Vuelo + Alojamiento
+                        </button>
+                    </div>
+                </div>
+
+                <div class="form-fields">
+                    <div class="field-group">
+                        <div class="field">
+                            <label>ORIGEN</label>
+                            <div class="input-container">
+                                <i class="fas fa-circle"></i>
+                                <input type="text" value="Bogotá, Bogotá D.C." readonly>
+                            </div>
+                        </div>
+                        <button class="swap-btn">
+                            <i class="fas fa-exchange-alt"></i>
+                        </button>
+                        <div class="field">
+                            <label>DESTINO</label>
+                            <div class="input-container">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <input type="text" placeholder="Ingresa hacia donde quieres viajar">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="field-group">
+                        <div class="field">
+                            <label>FECHAS</label>
+                            <div class="date-container">
+                                <div class="date-field">
+                                    <i class="fas fa-calendar"></i>
+                                    <input type="text" placeholder="Ida">
+                                </div>
+                                <div class="date-field">
+                                    <i class="fas fa-calendar"></i>
+                                    <input type="text" placeholder="Vuelta">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label>PASAJEROS Y CLASE</label>
+                            <div class="input-container">
+                                <i class="fas fa-user"></i>
+                                <input type="text" value="1 persona, Económica" readonly>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="toggle-section">
+                        <label class="toggle-label">
+                            <input type="checkbox">
+                            <span class="toggle-slider"></span>
+                            Cualquier fecha más barata
+                        </label>
+                    </div>
+
+                    <button class="search-btn">
+                        <i class="fas fa-search"></i>
+                        Buscar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Destinos Populares -->
+    <section class="popular-destinations">
+        <div class="container">
+            <h2>Encuentra vuelos baratos a los destinos más populares</h2>
+            <div class="destinations-grid">
+                <div class="destination-card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=400&h=300&fit=crop" alt="Cartagena">
+                    </div>
+                    <div class="card-content">
+                        <div class="flight-label">VUELO</div>
+                        <h3>Vuelos a Cartagena de Indias</h3>
+                        <p>Partiendo desde Bogotá</p>
+                        <p>Por VivaAir</p>
+                        <button class="round-trip-btn">Ida y vuelta</button>
+                        <div class="price">$ 247.516</div>
+                        <div class="dates">8 febrero 2026 - 19 febrero 2026</div>
+                    </div>
+                </div>
+
+                <div class="destination-card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1582407947304-fd86f028f716?w=400&h=300&fit=crop" alt="Medellín">
+                    </div>
+                    <div class="card-content">
+                        <div class="flight-label">VUELO</div>
+                        <h3>Vuelos a Medellín</h3>
+                        <p>Partiendo desde Bogotá</p>
+                        <p>Por VivaAir</p>
+                        <button class="round-trip-btn">Ida y vuelta</button>
+                        <div class="price">$ 143.815</div>
+                        <div class="dates">1 febrero 2026 - 5 febrero 2026</div>
+                    </div>
+                </div>
+
+                <div class="destination-card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=300&fit=crop" alt="Santa Marta">
+                    </div>
+                    <div class="card-content">
+                        <div class="flight-label">VUELO</div>
+                        <h3>Vuelos a Santa Marta</h3>
+                        <p>Partiendo desde Bogotá</p>
+                        <p>Por VivaAir</p>
+                        <button class="round-trip-btn">Ida y vuelta</button>
+                        <div class="price">$ 262.454</div>
+                        <div class="dates">3 febrero 2026 - 12 febrero 2026</div>
+                    </div>
+                </div>
+
+                <div class="destination-card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1582407947304-fd86f028f716?w=400&h=300&fit=crop" alt="Cali">
+                    </div>
+                    <div class="card-content">
+                        <div class="flight-label">VUELO</div>
+                        <h3>Vuelos a Cali</h3>
+                        <p>Partiendo desde Bogotá</p>
+                        <p>Por VivaAir</p>
+                        <button class="round-trip-btn">Ida y vuelta</button>
+                        <div class="price">$ 138.920</div>
+                        <div class="dates">11 noviembre 2025 - 15 noviembre 2025</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ofertas Especiales -->
+    <section class="special-offers">
+        <div class="container">
+            <div class="offers-grid">
+                <div class="offer-card hotels">
+                    <div class="offer-content">
+                        <div class="offer-header">
+                            <i class="fas fa-bed"></i>
+                            <h3>Semana de HOTELES</h3>
+                        </div>
+                        <div class="offer-discount">HASTA 66% DTO</div>
+                        <div class="offer-details">
+                            <div class="payment-info">
+                                <i class="fas fa-plus"></i>
+                                <span>Paga a 3 CUOTAS SIN INTERESES</span>
+                            </div>
+                            <div class="bank-logos">
+                                <span>Banco Falabella</span>
+                                <span>AV Villas</span>
+                                <span>Banco Popular</span>
+                            </div>
+                            <button class="offer-btn">EXCLUSIVO APP, TIENDAS Y CALL CENTER</button>
+                        </div>
+                    </div>
+                    <div class="offer-image">
+                        <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=400&h=300&fit=crop" alt="Hotel">
+                    </div>
+                </div>
+
+                <div class="offer-card discount">
+                    <div class="offer-content">
+                        <div class="offer-header">
+                            <h3>DESCUENTO adicional</h3>
+                            <i class="fas fa-wallet"></i>
+                        </div>
+                        <div class="offer-discount">Hasta $200.000 DTO</div>
+                        <div class="offer-details">
+                            <div class="payment-logos">
+                                <span>Nequi</span>
+                                <span>Banco de Bogotá</span>
+                                <span>Banco Popular</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="offer-image">
+                        <img src="https://images.unsplash.com/photo-1506905925346-14bda5d4a4b0?w=400&h=300&fit=crop" alt="Playa">
+                    </div>
+                </div>
+
+                <div class="offer-card flights">
+                    <div class="offer-content">
+                        <div class="offer-header">
+                            <h3>VUELOS nacionales</h3>
+                            <i class="fas fa-plane"></i>
+                        </div>
+                        <div class="offer-discount">Hasta $300.000 DTO</div>
+                        <div class="offer-details">
+                            <button class="destinations-btn">Bogotá, Medellín, Cali y más!</button>
+                        </div>
+                    </div>
+                    <div class="offer-image">
+                        <img src="https://images.unsplash.com/photo-1582407947304-fd86f028f716?w=400&h=300&fit=crop" alt="Ciudad">
+                    </div>
+                </div>
+
+                <div class="offer-card vivaair">
+                    <div class="offer-content">
+                        <div class="brand-section">
+                            <div class="brand-logo">V</div>
+                            <div class="brand-text">
+                                <span class="brand-name">VivaAir</span>
+                                <span class="brand-tagline">ft. SHAKIRA</span>
+                            </div>
+                        </div>
+                        <button class="search-trip-btn">
+                            <i class="fas fa-search"></i>
+                            Busca ya tu viaje
+                        </button>
+                    </div>
+                    <div class="offer-image">
+                        <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=400&h=300&fit=crop" alt="Shakira">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios Adicionales -->
+    <section class="additional-services">
+        <div class="container">
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Compra tu viaje con asesoría personalizada</h3>
+                    <p>Nuestros agentes expertos te pueden ayudar a concretar tu viaje. ¡Consulta nuestros canales de atención!</p>
+                    <button class="service-btn">Conocer canales</button>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>Planea tu viaje con Inteligencia Artificial</h3>
+                    <p>¿Tienes un viaje en mente y no sabes por dónde empezar? SOFIA, nuestra asistente de viajes con IA, puede guiarte.</p>
+                    <button class="service-btn">Chatear con SOFIA</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
