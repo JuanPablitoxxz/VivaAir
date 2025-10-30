@@ -6,6 +6,7 @@ import Image from 'next/image'
 interface DestinationCardProps {
   destination: string
   city: string
+  airline: string
   price: string
   dates: string
   image: string
@@ -15,6 +16,7 @@ interface DestinationCardProps {
 export default function DestinationCard({ 
   destination, 
   city, 
+  airline,
   price, 
   dates, 
   image, 
@@ -51,7 +53,7 @@ export default function DestinationCard({
         </h3>
         
         <p className="text-gray-600 text-sm mb-1">Partiendo desde Bogotá</p>
-        <p className="text-gray-600 text-sm mb-4">Por VivaAir</p>
+        <p className="text-gray-600 text-sm mb-4">Por {airline}</p>
         
         <button className="bg-gray-100 hover:bg-blue-100 text-gray-700 hover:text-blue-600 px-4 py-2 rounded-full text-sm font-medium transition-colors duration-200 mb-4">
           Ida y vuelta

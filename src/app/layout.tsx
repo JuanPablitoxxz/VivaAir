@@ -5,13 +5,13 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'VivaAir - Vuelos Nacionales',
-  description: 'Encuentra los mejores vuelos nacionales en Colombia con VivaAir. Reserva tu vuelo a Medellín, Cartagena, Cali y más destinos.',
-  keywords: 'vuelos nacionales, Colombia, VivaAir, Medellín, Cartagena, Cali, Santa Marta, avión',
+  title: 'VivaAir - Vuelos Nacionales | Avianca, LATAM, VivaAir',
+  description: 'Compara y reserva vuelos nacionales en Colombia. Encuentra las mejores ofertas de Avianca, LATAM, VivaAir y más aerolíneas. Medellín, Cartagena, Cali, Santa Marta.',
+  keywords: 'vuelos nacionales, Colombia, Avianca, LATAM, VivaAir, EasyFly, Medellín, Cartagena, Cali, Santa Marta, avión, aerolíneas',
   authors: [{ name: 'VivaAir' }],
   openGraph: {
-    title: 'VivaAir - Vuelos Nacionales',
-    description: 'Encuentra los mejores vuelos nacionales en Colombia',
+    title: 'VivaAir - Comparador de Vuelos Nacionales',
+    description: 'Compara precios de vuelos nacionales en Colombia. Avianca, LATAM, VivaAir y más.',
     type: 'website',
     locale: 'es_CO',
   },

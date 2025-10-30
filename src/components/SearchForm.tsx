@@ -88,15 +88,14 @@ export default function SearchForm() {
                 ))}
               </div>
 
-              {/* Flight + Hotel Button */}
+              {/* Airlines Button */}
               <div className="relative">
                 <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 bg-green-500 text-white text-xs px-3 py-1 rounded-full font-bold">
-                  Hasta 30% de ahorro
+                  Mejores precios
                 </div>
                 <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full font-semibold flex items-center space-x-2 transition-colors duration-200">
                   <span>✈️</span>
-                  <span>🛏️</span>
-                  <span>Vuelo + Alojamiento</span>
+                  <span>Avianca, LATAM, VivaAir</span>
                 </button>
               </div>
             </div>
